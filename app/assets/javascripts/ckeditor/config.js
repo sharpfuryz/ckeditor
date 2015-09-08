@@ -11,7 +11,7 @@ CKEDITOR.editorConfig = function( config )
   config.extraPlugins = 'toolbar,notification,autosave';
   config.skin = 'bootstrapck';
   config.font_names = 'ProximaNova/ProximaNova;' + config.font_names; //Unreal awesome fix
-  config.uiColor = '#2c303e';
+  // config.uiColor = '#2c303e';
   /* Filebrowser routes */
   // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
