@@ -8,6 +8,7 @@ CKEDITOR.editorConfig = function( config )
   // Define changes to default configuration here. For example:
   // config.language = 'fr';
   // config.uiColor = '#AADC6E';
+  config.extraPlugins = 'toolbar,notification,autosave';
   config.font_names = 'ProximaNova/ProximaNova;' + config.font_names; //Unreal awesome fix
   config.uiColor = '#2c303e';
   /* Filebrowser routes */
