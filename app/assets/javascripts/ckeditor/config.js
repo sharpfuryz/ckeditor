@@ -9,7 +9,22 @@ CKEDITOR.editorConfig = function( config )
   // config.language = 'fr';
   // config.uiColor = '#AADC6E';
   config.extraPlugins = 'toolbar,notification,autosave,glvrdPlugin,cards,comment';
-  config.toolbarGroups = [ { name: 'nadasuge', groups: [ 'cards', 'comment', 'tables' ]  }, { name: 'glvrd', groups: [ 'glvrdPlugin' ] } ];
+  config.toolbarGroups = [
+		{ name: 'tools' },
+		{ name: 'document',	 groups: [ 'mode' ] },
+		{ name: 'undo' },
+		{ name: 'others' },
+		{ name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },
+		{ name: 'clipboard',   groups: [ 'clipboard' ] },
+		{ name: 'insert' },
+		{ name: 'links' },
+		{ name: 'nadasuge',     groups: [ 'cards', 'comment', 'tables' ]  },
+		'/',
+		{ name: 'styles' },
+		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+		{ name: 'colors' },
+		{ name: 'paragraph',   groups: [ 'list', 'blocks', 'indent', 'align' ] }
+	];
   config.skin = 'bootstrapck';
   config.font_names = 'ProximaNova/ProximaNova;' + config.font_names; //Unreal awesome fix
   // config.uiColor = '#2c303e';
